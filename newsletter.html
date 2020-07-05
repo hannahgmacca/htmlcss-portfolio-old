@@ -1,0 +1,97 @@
+ <!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+   <title>Newsletter Signup</title>
+   <meta charset="utf-8">
+   <meta name="description" content="Newsletter Signup">
+   <meta name="keywords" content="newsletter, music, Kings music store"> 
+   <link rel="stylesheet" href="css/styles_hmcdonald.css" type="text/css" media="screen">
+    
+   <style>
+      
+       .footer {
+           position: fixed;
+           width: 100%;
+           bottom: 0px;
+       }   
+
+   </style>
+    
+   <script>
+   
+   function alertUser(msg) {
+       
+       alert(msg);
+   }
+   
+   function validateform() {
+       
+       var firstname = document.forms["newsletter"]["firstname"];
+       var lastname = document.forms["newsletter"]["lastname"];
+       var email = document.forms["newsletter"]["email"];
+       
+       if (firstname.value == "") {
+           
+           window.alert("Please enter your first name");
+           firstname.focus();
+           return false;
+       }
+       
+       if (lastname.value == "") {
+           
+           window.alert("Please enter your last name");
+           lastname.focus();
+           return false;
+     }
+       
+       if (email.value == "") {
+           
+           window.alert("Please enter your email");
+           email.focus();
+           return false;
+       }
+       
+       return true;
+}
+       
+   </script>
+
+</head>  
+<body onload="alertUser('Welcome to the Kings Music Store - Newsletter Signup')">
+    
+   <div id="newsletter">       
+    <form target="_blank" method="post" action="http://infotech.scu.edu.au/cgi-bin/echo_form" onsubmit="return validateform()" name="newsletter">
+        
+      <h1>Sign up for King's Music Store's Newsletter!</h1>    
+      First name:<input type="text" name="firstname" maxlength="60">
+      Last name: <input type="text" name="lastname" maxlength="60"><br><br>
+      Email: <input type="email" name="email" maxlength="60"><br><br>
+        
+      Age:  <input type="radio" name="age" value="15-25"> 15-25
+      <input type="radio" name="age" value="26-35"> 26-35 
+      <input type="radio" name="age" value="36-45"> 36-45
+      <input type="radio" name="age" value="46-55"> 46-55
+      <input type="radio" name="age" value="55+"> 55+ <br><br>
+      
+      Musical Preferences: <br><br>
+      <input type="checkbox" name="music" value="HeavyMetal"> Heavy Metal <br>
+      <input type="checkbox" name="music" value="Country and Western"> Country and Western <br>
+      <input type="checkbox" name="music" value="Classical"> Classical <br>
+      <input type="checkbox" name="music" value="Rock&Roll"> Rock and Roll <br>
+      <input type="checkbox" name="music" value="Pop"> Pop <br>
+      <input type="checkbox" name="music" value="Folk"> Folk <br>
+      <input type="checkbox" name="music" value="Blues"> Blues <br>
+      <input type="checkbox" name="music" value="Jazz"> Jazz <br>
+      <input type="checkbox" name="music" value="Disco"> Disco <br>
+      <input type="checkbox" name="music" value="Opera"> Opera <br><br>
+      Other: <br> <textarea name="music" rows="3" cols="60"></textarea> <br>
+      <input type="submit"> 
+      <input type="reset">      
+    </form>     
+   </div> 
+    
+</body>
+</html>

@@ -1,0 +1,187 @@
+body {
+    
+    font-family: "helvetica", sans-serif, "verdana";
+    background-image: url(../images/background.png);
+    margin: 0px;
+}
+
+/* Background image sources from unsplash.com */
+
+
+
+#header h1 {
+    
+    padding-left: 5px;
+    float: left;
+    display: inline-block;
+    
+}
+
+#header {
+    
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-color: white;
+    margin-top: 0px;
+    
+}
+
+#logo {
+    
+    float: left;
+    padding: 15px 0px 0px 5px;
+}
+
+#navlinks li {
+    
+    float: left;
+    padding: 5px 10px 10px 10px;
+    
+}
+
+#navlinks a {
+    
+    text-decoration: none;
+    color: #706f6c;
+
+}
+
+#navlinks a:hover {
+    
+    font-style: italic;
+}
+
+#navlinks ul {
+    
+    list-style-type: none;
+}
+
+#navlinks {
+    
+    float:right ;
+    margin-top: 10px;
+}
+
+#centretext {
+    
+   background-color:#d9d5ce;
+   border-style: solid;
+   width: 500px;
+   padding-top: 0px;
+    
+}
+.card {
+    
+   padding: 20px;
+   margin-bottom: 40px;
+   background-color:white;
+   color: black;
+   border-left-color: #8ba7bd;
+   border-left-style: solid;
+   border-left-width: 25px
+       
+}
+
+
+#centregraphic img {
+  
+  display: inherit;
+  margin:auto 
+}
+
+h3 a {
+    
+    color: black;
+    text-decoration: none;
+}
+
+h3 a:hover {
+    
+    color:darkslategray;
+    text-decoration: underline;
+}
+
+.firstcard {
+    
+    padding-top: 40px;
+    margin-top: 60px;
+    border-left-color: green;
+    border-left-width: thick;
+
+}
+
+td, th {
+    
+    margin:auto;
+    padding: 10px;
+    
+}
+
+tr:nth-of-type(odd) {
+    
+    background-color: lightgray;
+}
+
+caption {
+    
+    font-size: 200%;
+    
+}
+
+#education p h2 {
+    
+    display: inline-block;
+}
+
+#newsletter {
+    
+    margin: auto;
+    border-style: groove;
+    background-color: white;
+    width: 600px;
+    margin-top: 100px;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 100px;
+
+}
+
+
+#newsletter h1 {
+    
+    text-align: center;
+}
+
+#webimg {
+    
+    padding-right: 50px;
+}
+
+.footer {
+    
+    padding: 10px;
+    background-color: #45525c;
+    text-align: center;
+    color: white;
+    margin-top: 0px;
+    font-family: monospace;
+    font-size: 85%;
+
+
+}
+
+.footer a {
+    
+    text-decoration: none;
+    color: white;
+
+}
+
+.footer a:hover {
+    
+    font-weight: 600;
+    color: black;
+
+}
+
